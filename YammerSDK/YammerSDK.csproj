@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7359FC5B-1E80-445F-BB33-03046AC33C01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YammerSDK</RootNamespace>
+    <AssemblyName>YammerSDK</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\YammerDotNet\YammerCrawlSync\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\Client.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Groups.cs" />
+    <Compile Include="Helpers\Helper.cs" />
+    <Compile Include="Messages\ThreadedExtended.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="Notifications\Action.cs" />
+    <Compile Include="Notifications\Action2.cs" />
+    <Compile Include="Notifications\Attachment.cs" />
+    <Compile Include="Notifications\Body.cs" />
+    <Compile Include="Notifications\Body2.cs" />
+    <Compile Include="Notifications\Body3.cs" />
+    <Compile Include="Notifications\Contact.cs" />
+    <Compile Include="Notifications\EmailAddress.cs" />
+    <Compile Include="Notifications\File.cs" />
+    <Compile Include="Notifications\FollowedReference.cs" />
+    <Compile Include="Notifications\Im.cs" />
+    <Compile Include="Notifications\Image.cs" />
+    <Compile Include="Notifications\Item.cs" />
+    <Compile Include="Notifications\LatestVersion.cs" />
+    <Compile Include="Notifications\LikedBy.cs" />
+    <Compile Include="Notifications\Message.cs" />
+    <Compile Include="Notifications\Meta.cs" />
+    <Compile Include="Notifications\Name.cs" />
+    <Compile Include="Notifications\Object.cs" />
+    <Compile Include="Notifications\Objects.cs" />
+    <Compile Include="Notifications\Page.cs" />
+    <Compile Include="Notifications\ParticipatingName.cs" />
+    <Compile Include="Notifications\PhoneNumber.cs" />
+    <Compile Include="Notifications\ProfileFieldsConfig.cs" />
+    <Compile Include="Notifications\Reference.cs" />
+    <Compile Include="Notifications\Settings.cs" />
+    <Compile Include="Notifications\Stats.cs" />
+    <Compile Include="Notifications\Stats2.cs" />
+    <Compile Include="Notifications\Stats3.cs" />
+    <Compile Include="Notifications\Subject.cs" />
+    <Compile Include="Notifications\Topic.cs" />
+    <Compile Include="Notifications\User.cs" />
+    <Compile Include="Notifications\Ymodule.cs" />
+    <Compile Include="RootMessages.cs" />
+    <Compile Include="Messages\Attachment.cs" />
+    <Compile Include="Messages\Body.cs" />
+    <Compile Include="Messages\Body2.cs" />
+    <Compile Include="Messages\Image.cs" />
+    <Compile Include="Messages\LikedBy.cs" />
+    <Compile Include="Messages\Message.cs" />
+    <Compile Include="Messages\Meta.cs" />
+    <Compile Include="Messages\Name.cs" />
+    <Compile Include="Messages\Realtime.cs" />
+    <Compile Include="Messages\Reference.cs" />
+    <Compile Include="Messages\Stats.cs" />
+    <Compile Include="Messages\SystemMessageProperties.cs" />
+    <Compile Include="Messages\Topic.cs" />
+    <Compile Include="Messages\Ymodule.cs" />
+    <Compile Include="Network.cs" />
+    <Compile Include="Networks\ProfileFieldsConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requestor.cs" />
+    <Compile Include="Token\AccessToken.cs" />
+    <Compile Include="Token\TokenResponse.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Users\Contact.cs" />
+    <Compile Include="Users\EmailAddress.cs" />
+    <Compile Include="Users\HomeTab.cs" />
+    <Compile Include="Users\Im.cs" />
+    <Compile Include="Users\NetworkSettings.cs" />
+    <Compile Include="Users\PhoneNumber.cs" />
+    <Compile Include="Users\Settings.cs" />
+    <Compile Include="Users\Stats.cs" />
+    <Compile Include="Users\WebPreferences.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
